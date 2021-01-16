@@ -1,0 +1,178 @@
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(100deg, #c31432 50%, #240b36 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+  
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+  
+.bg3 {
+    animation-duration:5s;
+}
+  
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+  /*Body*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  /*Conatiner*/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-top: 15px;
+    padding-top: 10%;
+}
+  /*Image*/
+img{
+    width: 300px;
+    height: 200px;
+}
+  /*Conatiner & card*/
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter:blur(5px);
+}
+
+.container .cardt{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter:blur(5px);
+}
+
+@media only screen and (min-width: 600px) {
+    .container .cardt{
+        position: relative;
+        width: 700px;
+        height: 30px;
+        font-size: 20px;
+        margin: 20px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter:blur(5px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container .cardt{
+        position: relative;
+        width: 1000px;
+        height: 30px;
+        font-size: 20px;
+        margin: 20px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter:blur(5px);
+    }
+}
+
+
+.l1 {
+    color: yellow;
+}
+.l2 {
+    color: teal;
+}
+.l3 {
+    color: green;
+}
+.l4 {
+    color: red
+}
+.l5 {
+    color: rgb(0, 255, 13);
+}
+.l6 {
+    color: paleturquoise;
+}
+.l7 {
+    color: blue;
+}
+.l8 {
+    color: crimson;
+}
+.waviy {
+    position: absolute;
+    top:0%;
+    left: 35%;
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+@media only screen and (max-width: 768px) {
+    .waviy {
+        position: absolute;
+        left: 20%;
+    }
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: 40px;
+        font-weight: bold;
+            
+        text-transform: uppercase;
+        animation: flip 2s infinite;
+        animation-delay: calc(.2s * var(--i))
+    }
+}
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg) 
+    }
+}
+ 
