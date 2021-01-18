@@ -1,6 +1,6 @@
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(100deg, #c31432 50%, #240b36 50%);
+    background-image: linear-gradient(100deg, #8fc1e3 50%, #f7f9fb 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -117,28 +117,28 @@ img{
 
 
 .l1 {
-    color: yellow;
+    color: #000080;
 }
 .l2 {
-    color: teal;
+    color: #191970;
 }
 .l3 {
-    color: green;
+    color: #00008b;
 }
 .l4 {
-    color: red
+    color: #0000cd;
 }
 .l5 {
-    color: rgb(0, 255, 13);
+    color: #4169e1;
 }
 .l6 {
-    color: paleturquoise;
+    color:#4682b4;
 }
 .l7 {
-    color: blue;
+    color: #6495ed;
 }
 .l8 {
-    color: crimson;
+    color: #00bfff;
 }
 .waviy {
     position: absolute;
